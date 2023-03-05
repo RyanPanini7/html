@@ -1,0 +1,44 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+        <button onclick="displayShow_Hide(this)"> Backend</button>
+        <ul>
+            <li>
+                <button onclick="displayShow_Hide(this)">app</button>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="displayShow_Hide(this)">config</button>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <button onclick="displayShow_Hide(this)">Frontend</button>
+        <ul>
+            <li>
+                <button onclick="displayShow_Hide(this)">public</button>
+                <ul id="ul-5">
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    function displayShow_Hide(obj) {
+        const item = obj.nextElementSibling;
+        item.style.display = item.style.display == 'none' ? 'block' : 'none'; 
+    }
+</script>
